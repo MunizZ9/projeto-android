@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --cor0: #fff;
+    --cor1: #636f2a;
+    --pamonha: #af234b;
+    --cansao: #b42fab34;
+
+    --font-padrao: 'idroid'
+}
+
+body {
+    background-color: rgb(243, 227, 204);
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 200px;
+    background-image: linear-gradient(to bottom, #37C878, #1A5C38);
+}
+   
+h1 {
+    
+    margin: 0px;
+    color: white;
+    font-family: 'Bebas Neue';
+    font-weight: lighter;
+    font-size: 40px;
+    text-shadow: 2px 1px rgb(0 0 0 / 40%);
+    height: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-top: 56px;         
+}
+
+aside {
+    color: rgba(255, 255, 255, 0.568);
+    font-size: 16px;
+    font-weight: bolder;
+    text-shadow: 2px 1px rgb(0 0 0 / 32%);
+    min-width: 280px;
+    max-width: 700px;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: -16px;
+}
+
+#asidebottom {
+    font-size: 16px;
+    min-width: 280px;
+    max-width: 700px;
+    margin-top: -30px;
+}
+
+nav {
+    padding: 10px;
+    margin-top: 44px;   
+}
+
+nav a {
+    color: #84E1AD;
+    text-decoration: none;
+    font-weight: bolder;
+    margin: 0px 0px 0px 15px;    
+    
+    transition-duration: 0.5s;
+    font-size: 16px;
+}
+
+a:hover {
+    color: rgba(28, 85, 42, 0.842);
+}
+
+nav a:hover {
+    padding: 10px;
+    background-color: #37c878bb;
+    color: #1A5C38;
+    border-radius: 10px;
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+span{
+    color: rgb(17, 82, 17); 
+    font-weight: bolder;
+}
+
+#mainpincipal {
+    background-color: white;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 56%);
+    border-radius: 0px 0px 15px 15px;
+    min-width: 280px;
+    max-width: 1091px;
+    margin: auto;
+    padding: 5px 20px;
+}
+
+article {
+    margin: 0px;
+}
+
+article > h2 {  
+    color: #1A5C38;
+    font-family: 'idroid';
+    font-weight: lighter;
+
+    margin: 0px 0px 0px 24px;
+} 
+
+main > p {   
+    text-align: justify;
+    text-indent: 25px;
+
+    font-size: 1em;
+    line-height: 1.5em;
+
+    margin: 17px 15px 10px 16px;    
+}
+
+article > h3 {
+    background-image: linear-gradient(to right, #37c878c2, #37c87875, rgba(255, 255, 255, 0.705) );
+    font-family: 'idroid';
+    color: #1A5C38;
+    margin-left: 24px;
+    text-indent: 8px;
+}
+
+main > p > a {
+    background-color: #37c878c2 ;
+    color: #1A5C38;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 1px 2px;
+}
+
+main > p > a:hover {
+    text-decoration: underline;
+    color: #279257;
+}
+
+img {
+    width: 100%;
+    
+}
+
+div.video{
+    background-color: #1A5C38;
+
+    padding: 20px;
+    padding-bottom: 45%;
+    margin: 0px -20px 30px -20px;
+
+    position: relative;
+
+}
+
+div.video > iframe {
+   top: 5%; 
+   left: 5%;
+   width: 90%;
+   height: 90%;
+
+    position: absolute;
+}
+
+
+
+main > main > article > h4 {
+    color: white;
+    margin: 15px 0px 0px 17px;
+    font-weight: bolder;    
+}
+
+main ul {
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+}
+
+li > a {
+    color: black;
+}
+
+footer {
+    color: white;
+    background-color:#1A5C38;
+    border: 10px solid #1A5C38;
+    display: flex;
+    text-align: center;
+    justify-content: center;  
+    margin-top: 30px;  
+}
+
+.aprendermais {
+    height: 39px;
+    border-radius: 20px 20px 0px 0px;
+    background-color:#2EA765;
+    display: flex;   
+}
+
+.espacado {
+    margin: 0px 0px 0px 0px;
+    padding-left: 2px;
+    
+}
+
+#maodroid {
+   max-width: 350px;
+   display: block;
+   margin: auto;
+}
+
+#aprender {
+    background-color: #84e1aca6;
+    min-width: 280px;
+    max-width: 1063px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 3px 5px #00000057;
+    margin: auto;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 1100px) {
+
+    #mainpincipal {
+        background-color: white;
+        box-shadow: 0px 0px 15px rgb(0 0 0 / 56%);
+        border-radius: 0px 0px 0px 0px;
+        min-width: 280px;
+        max-width: 1091px;
+        margin: auto;
+    }
+
+    footer {
+        color: white;
+        background-color: #1A5C38;
+        border: 10px solid #1A5C38;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: -11px;
+    }
+
+}
